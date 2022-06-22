@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1329080220558376409}
   - component: {fileID: 5528912667024131164}
   - component: {fileID: 7275528625653921806}
-  - component: {fileID: 1885023614513630161}
   - component: {fileID: 8560666315266952934}
+  - component: {fileID: 7071343458022422381}
   m_Layer: 0
   m_Name: LimitTime
   m_TagString: Untagged
@@ -97,21 +97,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &1885023614513630161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6999334492051295899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9b9f8b9043cdd4fb2b2f839dd770d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdownMinutes: 1
-  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
-  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!82 &8560666315266952934
 AudioSource:
   m_ObjectHideFlags: 0
@@ -208,6 +193,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7071343458022422381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999334492051295899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b8d538d4879be49a822b66bda834bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownMinutes: 1
+  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
+  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!1 &8197830436221085916
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,8 +315,8 @@ GameObject:
   - component: {fileID: 8197830436354892847}
   - component: {fileID: 8197830436354892846}
   - component: {fileID: 8197830436354892817}
+  - component: {fileID: 7342721370048255772}
   - component: {fileID: 8197830436354892816}
-  - component: {fileID: 6210895561137615239}
   - component: {fileID: 1746734800248889551}
   m_Layer: 0
   m_Name: AnsCan3
@@ -405,6 +405,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7342721370048255772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197830436354892818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8729480730844e45956894a4e6d69db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaruGazou: {fileID: 2100000, guid: c515f4d5db7530749bb8e85341b148ff, type: 2}
+  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!65 &8197830436354892816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -418,20 +432,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5985208, y: 2.598217, z: 3.8269796}
   m_Center: {x: 0.00000011920929, y: -2.5007753e-14, z: 1.7597647}
---- !u!114 &6210895561137615239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8197830436354892818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5f8ab1a227506649b4b0fb805d7f0d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaruGazou: {fileID: 2100000, guid: c515f4d5db7530749bb8e85341b148ff, type: 2}
-  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!82 &1746734800248889551
 AudioSource:
   m_ObjectHideFlags: 0
@@ -704,7 +704,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8197830436618806912}
-  m_Text: Which English word does this picture show?
+  m_Text: "Which English word does this picture show?\n                               
+    \u505C\u96FB"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -824,9 +825,9 @@ GameObject:
   - component: {fileID: 8197830436997322324}
   - component: {fileID: 8197830436997322320}
   - component: {fileID: 8197830436997322323}
+  - component: {fileID: 3970378584883279926}
   - component: {fileID: 8197830436997322322}
   - component: {fileID: 8197830436997322325}
-  - component: {fileID: 4815086711930552343}
   - component: {fileID: 1039134841671880343}
   m_Layer: 0
   m_Name: AnsCan1
@@ -899,6 +900,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3970378584883279926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197830436997322327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54eefa04f8c0fe42ba7e94aeed38edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
+  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!54 &8197830436997322322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -928,20 +943,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.598521, y: 2.5982165, z: 3.8269787}
   m_Center: {x: -0.0000017881393, y: 3.5527137e-15, z: 1.7597642}
---- !u!114 &4815086711930552343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8197830436997322327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c0bbe4d40606d4584a0cd9bf463e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
-  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!82 &1039134841671880343
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1144,9 +1145,9 @@ GameObject:
   - component: {fileID: 8197830437315787797}
   - component: {fileID: 8197830437315787793}
   - component: {fileID: 8197830437315787792}
+  - component: {fileID: 9177833625383922502}
   - component: {fileID: 8197830437315787795}
   - component: {fileID: 8197830437315787794}
-  - component: {fileID: 7231695827385925776}
   - component: {fileID: 9032509102514109255}
   m_Layer: 0
   m_Name: AnsCan2
@@ -1219,6 +1220,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9177833625383922502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197830437315787796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54eefa04f8c0fe42ba7e94aeed38edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
+  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!54 &8197830437315787795
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1248,20 +1263,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.598521, y: 2.617391, z: 3.8269787}
   m_Center: {x: 0.00000012015171, y: 0.015815081, z: 1.7597642}
---- !u!114 &7231695827385925776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8197830437315787796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c0bbe4d40606d4584a0cd9bf463e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
-  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!82 &9032509102514109255
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1371,8 +1372,8 @@ GameObject:
   - component: {fileID: 8197830437512274651}
   - component: {fileID: 8197830437512274650}
   - component: {fileID: 8197830437512274653}
-  - component: {fileID: 7426282372060698143}
   - component: {fileID: 3120647296371633463}
+  - component: {fileID: 6335030180767064856}
   m_Layer: 0
   m_Name: AnsCan4
   m_TagString: Untagged
@@ -1473,20 +1474,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5985208, y: 2.598217, z: 3.8269796}
   m_Center: {x: 0.0000010728836, y: -2.5007753e-14, z: 1.7597647}
---- !u!114 &7426282372060698143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8197830437512274655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c0bbe4d40606d4584a0cd9bf463e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
-  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!82 &3120647296371633463
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1583,6 +1570,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6335030180767064856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197830437512274655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54eefa04f8c0fe42ba7e94aeed38edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BatsuGazou: {fileID: 2100000, guid: 6334067e30d27c3409ddb93d8e796e86, type: 2}
+  ChangeBoardImage: {fileID: 8197830437062540250}
 --- !u!1 &8197830437537057901
 GameObject:
   m_ObjectHideFlags: 0

@@ -81,7 +81,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5131081455950789878}
-  m_Text: Which English word does this picture show?
+  m_Text: "Which English word does this picture show?\n                               
+    \u5951\u7D04"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

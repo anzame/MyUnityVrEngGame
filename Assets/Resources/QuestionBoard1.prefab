@@ -660,7 +660,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6140044584003420383}
-  m_Text: Which English word does this picture show?
+  m_Text: "Which English word does this picture show?\n\t\t\u3000\u3000\u3000\u3000\u3000\u3000  
+    \u96EA\u5D29"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

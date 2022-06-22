@@ -595,7 +595,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076123039551475990}
-  m_Text: Which English word does this picture show?
+  m_Text: "Which English word does this picture show?\n                            
+    \u5352\u696D\u8A3C\u66F8"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -622,8 +623,8 @@ GameObject:
   - component: {fileID: 857800852880499891}
   - component: {fileID: 6836177700530390027}
   - component: {fileID: 6836177700530390024}
-  - component: {fileID: 5689171730687755808}
   - component: {fileID: 392135164236652512}
+  - component: {fileID: 6204991765506059749}
   m_Layer: 0
   m_Name: AnsCan3
   m_TagString: Untagged
@@ -724,20 +725,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5985208, y: 2.598217, z: 3.8269796}
   m_Center: {x: 0.00000011920929, y: -2.5007753e-14, z: 1.7597647}
---- !u!114 &5689171730687755808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3202804609397871058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986363949e2a4944a9e408d509981d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaruGazou: {fileID: 2100000, guid: c515f4d5db7530749bb8e85341b148ff, type: 2}
-  ChangeBoardImage: {fileID: 1076123039415055483}
 --- !u!82 &392135164236652512
 AudioSource:
   m_ObjectHideFlags: 0
@@ -834,6 +821,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6204991765506059749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202804609397871058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1d5019484c6094fbdf907e14f15252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaruGazou: {fileID: 2100000, guid: c515f4d5db7530749bb8e85341b148ff, type: 2}
+  ChangeBoardImage: {fileID: 1076123039415055483}
 --- !u!1 &3347547204205711501
 GameObject:
   m_ObjectHideFlags: 0
