@@ -9,7 +9,7 @@ public class OpeningButton : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TutorialScene");
     }
     // Start is called before the first frame update
     void Start()
